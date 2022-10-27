@@ -1,0 +1,29 @@
+﻿@model List<Car>
+
+@{
+    ViewData["Title"] = "Voitures";
+}
+<div style="display: flex; justify-content: center">
+    
+    <table>
+        
+        <tr>
+            <th>ID</th>
+            <th>Brand</th>
+            <th>Model</th>
+        </tr>
+        
+        @foreach (Car car in Model)
+        {
+            <tr>
+                <td>@car.Id</td>
+                <td>@car.Brand</td>
+                <td>@car.Model</td>
+            </tr>
+        }
+        
+        
+    </table>
+    
+</div>
+

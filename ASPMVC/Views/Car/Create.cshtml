@@ -1,0 +1,31 @@
+﻿@model CarCreateViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form asp-action="Create">
+    
+    <div>
+        
+        <span asp-validation-for="Brand"></span>
+        <br>
+        <label asp-for="Brand" ></label>
+        <br>
+        <input asp-for="Brand" type="text">
+        
+    </div>
+    
+    <div>
+            
+        <span asp-validation-for="Model"></span>
+        <br>
+        <label asp-for="Model" ></label>
+        <br>
+        <input asp-for="Model" type="text">
+        
+    </div>
+
+    <input type="submit" value="Créer">
+
+</form>
